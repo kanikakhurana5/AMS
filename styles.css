@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #E6E6FA; /* Lilac color */
+    padding: 10px;
+    border-bottom: 2px solid purple;
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.header img.logo {
+    width: 80px; /* Increase the logo size */
+    height: 80px;
+    margin-right: 20px; /* Space between logo and heading */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+    text-align: center; /* Ensure the text is centered within the flex container */
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sidebar {
+    background-color: pink;
+    width: 20%;
+    border: 2px solid purple; /* Purple border */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.sidebar button {
+    background-color: #E6E6FA; /* Lilac color */
+    border: 2px solid purple; /* Purple border */
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.sidebar button:hover {
+    background-color: #D8BFD8; /* Thistle color for hover effect */
+}
+
+.login-box {
+    background-color: hwb(29 82% 1%); /* Light peach color */
+    border: 2px solid rgb(255, 102, 0);
+    width: 700px; /* Box width */
+    height: 500px; /* Box height */
+    margin: auto; /* Center the box horizontally */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Align items in the center horizontally */
+    padding: 20px; /* Adjust padding */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.login-box select, 
+.login-box input {
+    width: 80%;
+    padding: 15px; /* Adjust padding for uniform size */
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-box .login-button {
+    width: 30%; /* Make the login button smaller */
+    padding: 10px; /* Smaller padding */
+    font-size: 16px; /* Smaller font size */
+    background-color: rgb(255, 132, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Add some margin to the top for spacing */
+    border-radius: 5px;
+}
+
+.login-box .login-button:hover {
+    background-color: rgb(255, 132, 0);
+}
+
+.main-content {
+    background-color: #E0FFFF; /* Light cyan background */
+    border: 2px solid #008080; /* Teal border */
+    width: 700px; /* Box width */
+    height: 500px; /* Box height */
+    margin: auto; /* Center the box horizontally */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Align items in the center horizontally */
+    padding: 20px; /* Adjust padding */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.main-content select {
+    width: 80%;
+    padding: 15px; /* Adjust padding for uniform size */
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.main-content .submit-button {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.main-content .submit-button:hover {
+    background-color: darkgreen;
+}
+.header img.logo {
+    width: 120px; /* Set your desired width */
+    height: 120px; /* Set your desired height */
+}
