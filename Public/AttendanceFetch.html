@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS - Dashboard</title>
+    <link rel="stylesheet" href="AttendanceDetails.css">
+</head>
+<body>
+    <!-- Heading Section -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <div class="title">ATTENDANCE MANAGEMENT SYSTEM</div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Main Content with Form Section -->
+        <div class="main-content">
+            <div class="form-container">
+                <h2>Enter Attendance Details</h2>
+                <form id="attendance-details-form" action="/saveAttendance" method="post">
+                    
+                    <label for="Attendance Type">Attendance Type:</label>
+                    <select id="attendanceType" name="attendanceType" required>
+                        <option value="" disabled selected>Select Attendance Type</option>
+                        <option value="Lab">Lab</option>
+                        <option value="Lecture">Lecture</option>
+                    </select><br><br>
+
+                    <label for="subject_id">Subject:</label>
+                    <select id="subject_id" name="subject_id" required>
+                        <option value="" disabled selected>Select Subject</option>
+                    </select><br><br>
+
+                    <label for="lecturenumber">Lecture Number:</label>
+                    <input type="number" id="lecturenumber" name="lectureNumber" required placeholder="Lecture Number"><br><br>                
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required placeholder="Date"><br><br>
+
+                    <label for="topic">Topic:</label>
+                    <input type="text" id="topic" name="topic" required placeholder="Topic"><br><br>
+                    
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required placeholder="Time"><br><br>
+                    
+                    <label for="class_id">Class:</label>
+                    <select id="class_id" name="class_id" required>
+                        <option value="" disabled selected>Select Class</option>
+                    </select><br><br>
+
+                    <label for="batch_id">Batch:</label>
+                    <select id="batch_id" name="batch_id">
+                        <option value="" disabled selected>Select Batch</option>
+                    </select><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<script src="AttendanceFetch.js"></script>
+    
+</body>
+</html>

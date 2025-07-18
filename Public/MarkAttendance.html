@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MarkAttendance.css">
+    <title>Student List</title>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <div class="title">ATTENDANCE MANAGEMENT SYSTEM</div>
+        </div>
+    </header>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student List</h1>
+
+        <div>
+            <button id="allPresent">Mark All Present</button>
+            <button id="allAbsent">Mark All Absent</button>
+            <label for="studentIdInput">Enter Student ID:</label>
+            <input type="text" id="studentIdInput" placeholder="Enter Student ID">
+            <button id="markById">Mark</button> <!-- Add Mark button -->
+        </div>
+        
+        <br>
+        <label for="classSelect">Select Class:</label>
+        <select id="classSelect">
+            <option value="">Select Class</option> <!-- Placeholder option -->
+        </select>
+
+        <label for="batchSelect">Select Batch:</label>
+        <select id="batchSelect">
+            <option value="">Select Batch</option> <!-- Placeholder option -->
+            <option value="all">All Batches</option> <!-- Option for all batches -->
+        </select>
+        <div>
+            <label for="lectureIdInput">Enter Lecture ID:</label>
+            <input type="text" id="lectureIdInput" placeholder="Enter Lecture ID">
+        </div>
+
+        <button id="fetchStudents">Fetch Students</button>
+        
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>UMB ID</th>
+                    <th>Action</th> <!-- Column for action buttons -->
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <button id="submitAttendance">Submit Attendance</button>
+        <p class="error-message" id="errorMessage"></p>
+    </div>
+
+    <script src="MarkAttendance.js"></script>
+</body>
+</html>
+

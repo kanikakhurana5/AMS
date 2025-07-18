@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management Dashboard</title>
+    <link rel="stylesheet" href="graph.css">
+    <!-- Include Chart.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <div class="title">ATTENDANCE MANAGEMENT SYSTEM</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="https://drive.google.com/drive/folders/1DwZTjhKIps09BFL-zabzlkx7ebVU0gOq?usp=share_link">
+                <button>Syllabus</button>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1XeiXHsPxPKT4KQySBV-lfSZBGGLJ01oF">
+                <button>ADSA</button>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1vOTB6iXkzR9ObW4b_GxBTk81xUc0BavL?usp=share_link">
+                <button>CNS</button>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1NuDg06NqutWyqlF9FQeIIkoqmqlMPpJE?usp=share_link">
+                <button>EEB</button>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1yP0dwN7z9qqdYdlhsvCHEmlXYO3rbXn1?usp=share_link">
+                <button>IP</button>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1GPctlqGQzi-Te1mXdnbvYXDXPBro9k19?usp=share_link">
+                <button>SE</button>
+            </a>  
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Bar Graph -->
+            <canvas id="attendanceChart" width="480" height="140"></canvas>
+            <br><br><br>
+
+            <!-- Data Cards -->
+            <div class="data-cards">
+                <div class="card" data-subject="IP">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="IP.gif" alt="IP" class="card-logo">
+                            <div class="card-title">IP</div>
+                        </div>
+                        <div class="card-back">
+                            <div>Total Lectures: 50</div>
+                            <div>Present: 40</div>
+                            <div>Absent: 10</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-subject="CNS">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="CNS.gif" alt="CNS" class="card-logo">
+                            <div class="card-title">CNS</div>
+                        </div>
+                        <div class="card-back">
+                            <div>Total Lectures: 45</div>
+                            <div>Present: 35</div>
+                            <div>Absent: 10</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-subject="SE">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="SE.gif" alt="SE Logo" class="card-logo">
+                            <div class="card-title">SE</div>
+                        </div>
+                        <div class="card-back">
+                            <div>Total Lectures: 45</div>
+                            <div>Present: 35</div>
+                            <div>Absent: 10</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-subject="ADSA">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="ADSA.gif" alt="ADSA" class="card-logo">
+                            <div class="card-title">ADSA</div>
+                        </div>
+                        <div class="card-back">
+                            <div>Total Lectures: 45</div>
+                            <div>Present: 35</div>
+                            <div>Absent: 10</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-subject="EEB">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="EEB.gif" alt="EEB" class="card-logo">
+                            <div class="card-title">EEB</div>
+                        </div>
+                        <div class="card-back">
+                            <div>Total Lectures: 45</div>
+                            <div>Present: 35</div>
+                            <div>Absent: 10</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="graph.js"></script>
+</body>
+</html>

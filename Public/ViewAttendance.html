@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Attendance</title>
+    <link rel="stylesheet" href="ViewAttendance.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="1-removebg-preview-3.png" alt="Logo" class="logo">
+            <div class="title">ATTENDANCE MANAGEMENT SYSTEM</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <h2>View Attendance</h2>
+            
+            <div style="margin-bottom: 20px;">
+                <input type="number" id="lectureId" placeholder="Enter Lecture ID">
+                <button onclick="fetchAttendance()">Fetch Attendance</button>
+            </div>
+
+            <table id="attendanceTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceBody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="ViewAttendance.js"></script>
+</body>
+</html>
+
+
+
